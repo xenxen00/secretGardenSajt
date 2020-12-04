@@ -1,0 +1,62 @@
+<main class="container">
+    <article class="row center d-flex flex-column">
+       <form id="forma" method="GET" action="obrada.php"  class="d-flex flex-column mt-5 mb-5">
+            <label for="name" id="infoIme">Ime</label>
+            <input id="ime" type="text"  name="ime" placeholder="Ime" />
+            <p class="alert alert-danger ispisGresaka">Niste pravilno uneli ime</p>
+
+            <label for="surname" class="mt-3" id="infoPrezime">Prezime</label>
+            <input id="prezime" type="text" placeholder="Prezime" name="prezime"/>
+            <p class="alert alert-danger ispisGresaka">Niste pravilno uneli prezime</p>
+
+            <label for="number" class="mt-3" id="infoInd">Broj Indeksa</label>
+            <input id="brInd" type="text" placeholder="11/20" name="brInd"/>
+             <p class="alert alert-danger ispisGresaka">Niste pravilno uneli brIndeksa</p>
+
+            <label for="radio" class="mt-3">Finansiranje</label>
+            <div class="form-group" id="finans">
+            <span><input type="radio" name="radF" id="budzet"/>Budzet</span>
+            <span><input type="radio" name="radF" id="samofinansiranje" /> Samofinansiranje</span>
+            </div>
+            <p class="alert alert-danger ispisGresaka">Niste izabrali</p>
+        </div>
+
+            <select name="listaSmerova" id="Smer" class="mt-3">
+                <option value="0" >Izaberite smer</option>
+                <option value="IT">Internet tehnologije</option>
+                <option value="KT">Komunikacione tehnologije</option>
+                <option value="BK">Internet bankarstvo</option>
+            </select>
+            <p class="alert alert-danger ispisGresaka">Niste izabrali</p>
+
+            <div class="form-group d-flex flex-column" id="domaciZ">
+            <label for="domaci" class="mt-3">Domaci</label>
+            <span><input type="checkbox" name="ChD" id="chD1" value="Domaci 1"/> Domaci 1 </span>
+            <span><input type="checkbox" name="ChD" id="chD2" value="Domaci 2"/> Domaci 2 </br></span>
+            
+        </div>
+        <p class="alert alert-danger ispisGresaka">Niste izabrali</p>
+            <div class="custom-file mt-3">
+                <input type="file" class="custom-file-input" id="inputGroupFile01" />
+                <label class="custom-file-label" for="inputGroupFile01">Izaberi datoteku</label>
+            </div>
+            <div class="mt-3">
+                <button class="btn btn-primary" type="button" id="btnPrijava"  class="sirina-2 center mt-5" onClick="proveriPodatke();">Prijavi</button>
+
+            </div>
+        </form>
+       <!-- <form id="forma" action="">
+            <div class="form-group" id="padajucaLista"></div>
+            <div class="form-group">
+                <input class="form-check-input" type="radio" name="rbPol" value="M"/>
+                <label for="" class="form-check-label">Muski</label>
+                <input class="form-check-input" type="radio" name="rbPol" value="Z"/>
+                <label for="" class="form-check-label">Zenski</label>
+            </div>
+            <div class="form-group">
+                <input type="button" value="klikni" id="btnKlikni" class="btn btn-primary">
+            </div>
+        </form>-->
+        <div id="ispis" class=""></div>
+    </article>
+</main>

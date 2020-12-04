@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Manjari';
+    src: url(../css/Manjari-Regular.ttf);
+  }
+*{    
+    font-family: 'Manjari'!important;
+}
+body{
+    position: relative;
+}
+#headerStrane{
+background-image: url("../img/pozadina7.jpg") !important;
+background-position: center;
+background-repeat: no-repeat;
+height: 800px;
+width: 100% !important;
+#logo{
+    img{
+        width: 100% !important;
+    }
+}
+#navBar{
+    position: fixed;
+    top:50px ;
+    right: 0;
+    z-index: 5;
+    >ul{
+        width: 100% !important;
+        li{
+            padding: 5px;
+            a{
+                font-size: 1.5em;
+                
+            }
+        }
+    }
+}
+}
+#nav2{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+#hamburger{
+    position: relative;
+    width: 100%;
+    button{
+        border: none;
+        border-radius: 25px 0px 25px 0px;
+        padding: 5px 10px;
+        background-color: #D598B9;
+    }
+    ul{
+        position: absolute;
+        top: 120%;
+        right: 0;
+        //visibility: hidden;
+        display: none;
+        background-color:#f8f8f8;
+        z-index: 5;
+        width: 400px !important;
+        padding: 15px;
+        border-radius:25px; 
+        li:hover{
+            background-color: #D598B9;
+            a{
+                color: #ffffff !important;
+            }
+        }
+        li{
+            text-align: center;
+            width: 100% !important;
+            border-radius: 15px;
+            a{
+                font-size: 2em;
+            }            
+        }
+    }
+    i{
+        font-size: 2em;
+        color: #ffffff;
+    }
+}
+#mojModal{
+    display: none;
+    width: 50%;
+    height: 500px;
+    background-color: rgba($color: #ffffff, $alpha: 0.8);
+    z-index: 5;
+    position: absolute;
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    border-radius: 25px;
+}
+.boja{
+    background-color: #f8f8f8;
+    border-radius: 25px 0px 25px 0px;
+    font-size: 1.2em;
+    
+}
+.hoverEfekat:hover {
+    background-color: #e5e5ed;
+    border-radius: 25px 0px 25px 0px;
+    transition: 0.5s;
+}
+.fontSize{
+    font-size:4em !important;
+}
+.fontSizeP{
+    font-size: 1.1em;
+}
+.mt-10{
+    margin-top: 10%;
+}
+.mt-20{
+    margin-top: 20%;
+}
+.nasloviBoja{
+    color: #D598B9;
+}
+.img-100{
+    width: 100%;
+}
+.usluga{
+    img{
+        width: 100%;
+    }
+}
+i{
+    font-family: 'FontAwesome' !important;
+}
+.prvi{
+    border-radius: 0px 85px 0px 85px !important;
+}
+.drugi{
+    border-radius: 50px 50px 0 0;
+}
+.treci{
+    border-radius: 85px 0px 85px 0px;
+}
+.cover{
+    border-radius: inherit;
+    background-color: rgba($color: #fff6d9, $alpha: 0.5);
+}
+.visina{
+    height: 500px;
+}
+.bojaFutera{
+    background-color: #30383B;
+}
+#otkrij{
+    padding: 20px;
+    border: 1px solid #30383B;
+    color: #30383B;
+    background-color: #ffffff;
+   
+   
+}
+#otkrij:hover{
+    background-color: #30383B;
+    color: #ffffff;
+}
+
+.sakriven{
+    display: none;
+}
+
+@media(max-width: 578px){
+    #navBar>ul{
+        display: none !important;
+    }
+}
